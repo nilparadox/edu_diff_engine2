@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edu_diff_engine2"
+version = "0.1.0"
+description = "Relative difficulty–controlled question generation from PDFs using dynamic rubrics and external LLMs."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Nilanjan Panda" }
+]
+license = { file = "LICENSE.txt" }
+dependencies = [
+  "groq",
+  "pdfplumber",
+  "python-dotenv",
+  "rich",
+  "pydantic",
+  "openai",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
