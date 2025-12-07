@@ -1,0 +1,7 @@
+groq
+openai
+pdfplumber
+pydantic
+python-dotenv
+rich
+click
